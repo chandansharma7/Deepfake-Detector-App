@@ -1,0 +1,106 @@
+/* Custom CSS styles to complement Bootstrap */
+
+/* Add some spacing to the main content area */
+.main-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Style for the file upload area */
+.upload-area {
+    border: 2px dashed var(--bs-secondary);
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    border-color: var(--bs-primary);
+    background-color: rgba(13, 110, 253, 0.05);
+}
+
+/* Style for the detection results */
+.result-card {
+    transition: transform 0.2s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Confidence meter styling */
+.confidence-meter {
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: var(--bs-gray-200);
+    overflow: hidden;
+}
+
+.confidence-meter-fill {
+    height: 100%;
+    background-color: var(--bs-info);
+}
+
+.confidence-meter-fill.high {
+    background-color: var(--bs-success);
+}
+
+.confidence-meter-fill.medium {
+    background-color: var(--bs-warning);
+}
+
+.confidence-meter-fill.low {
+    background-color: var(--bs-danger);
+}
+
+/* History table enhancements */
+.history-table tr {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.history-table tr:hover {
+    background-color: rgba(var(--bs-secondary-rgb), 0.1);
+}
+
+/* Animation for loading state */
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+}
+
+.loading {
+    animation: pulse 1.5s infinite;
+}
+
+/* Label styles for results */
+.result-label {
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.result-label.real {
+    background-color: var(--bs-success);
+    color: white;
+}
+
+.result-label.fake {
+    background-color: var(--bs-danger);
+    color: white;
+}
+
+/* File preview container */
+.file-preview {
+    max-width: 100%;
+    max-height: 400px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
