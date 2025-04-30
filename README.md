@@ -54,7 +54,7 @@ deepfake-detector/
 
 🚀 How to Run Locally
 1. Clone the repository
-git clone https://github.com/yourusername/deepfake-detector.git
+git clone https://github.com/chandansharma7/Deepfake-Detector-App
 cd deepfake-detector
 
 2. Install dependencies:
